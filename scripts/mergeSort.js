@@ -1,6 +1,6 @@
-function insertionSort (array) {
+function mergeSort (array) {
 
   return array;
 }
 
-export default insertionSort;
+export default mergeSort;
