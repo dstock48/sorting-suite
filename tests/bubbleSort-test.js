@@ -30,7 +30,7 @@ describe('Bubble Sort with filter', () => {
   })
 
   it('Should sort large arrays of numbers', () => {
-    let randomArray = genRanNum(20);
+    let randomArray = genRanNum(11000);  // max num < 2sec
     let sortedArray = [...randomArray].sort((a, b) => a - b);
 
     console.log('-=-=-=-=-=-=-=-');

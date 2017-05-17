@@ -73,6 +73,7 @@
         "int32Hint": false
       }
     ],
-    "no-console": 0
+    "no-console": 0,
+    "brace-style": 0
   }
 }

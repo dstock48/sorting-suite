@@ -30,7 +30,7 @@ describe('Insertion Sort', () => {
   })
 
   it('Should sort large arrays of numbers', () => {
-    let randomArray = genRanNum(15);
+    let randomArray = genRanNum(15300); // max num < 2sec
     let sortedArray = [...randomArray].sort((a, b) => a - b);
 
     console.log('-=-=-=-=-=-=-=-');
