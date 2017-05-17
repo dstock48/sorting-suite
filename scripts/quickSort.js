@@ -8,14 +8,15 @@ function quickSort(array) {
   let pv = array[p];
   let less = [], more = [], same = [];
 
-
   for (let i = 0; i < array.length; i++) {
-    if (array[i] === pv) {
-      same.push(array[i]);
-    } else if (array[i] < pv) {
-      less.push(array[i]);
+    let ce = array[i];
+
+    if (ce === pv) {
+      same.push(ce);
+    } else if (ce < pv) {
+      less.push(ce);
     } else {
-      more.push(array[i]);
+      more.push(ce);
     }
   }
   return quickSort(less).concat(same, quickSort(more));
