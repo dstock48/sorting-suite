@@ -1,8 +1,8 @@
 {
-  "name": "TDD",
-  "version": "1.0.0",
+  "name": "Sorting-Algos",
+  "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "sort.js",
   "directories": {
     "test": "tests"
   },
@@ -11,7 +11,7 @@
     "test": "mocha --compilers js:babel-core/register"
   },
   "keywords": [],
-  "author": "",
+  "author": "Dave Weinstock",
   "license": "ISC",
   "devDependencies": {
     "babel-cli": "^6.22.2",
