@@ -1,5 +1,6 @@
 function mergeSort (array) {
-
+  if (typeof array === 'string') { array = array.split('') }
+  if (!(array instanceof Array)) { return "Error - argument must be an array or string" }
   if (array.length < 2) { return array }
 
   const mid = Math.floor(array.length / 2);

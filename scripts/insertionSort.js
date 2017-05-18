@@ -1,6 +1,6 @@
 function insertionSort (array) {
-
-  // FIRST TRY
+  if (typeof array === 'string') { array = array.split('') }
+  if (!(array instanceof Array)) { return "Error - argument must be an array or string" }
   for (var i = 0; i < array.length; i++) {
     for (var j = i; j >= 0; j--) {
       if (array[j + 1] < array[j]) {
@@ -9,7 +9,6 @@ function insertionSort (array) {
     }
   }
   return array;
-
 }
 
 export default insertionSort;
